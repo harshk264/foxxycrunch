@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" href="assets/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Pacifico&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Mr+Dafoe&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
 <style>
   :root{
     --red:#A8201A;
@@ -40,7 +40,7 @@
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   h1,h2,h3,h4{font-family:'Baloo 2',cursive;line-height:1.15;}
-  .script{font-family:'Pacifico',cursive;font-weight:400;}
+  .script{font-family:'Mr Dafoe',cursive;font-weight:400;}
   .hand{font-family:'Dancing Script',cursive;font-weight:700;}
   .container{width:min(1180px,92%);margin:0 auto;}
   section{padding:72px 0;}
@@ -63,10 +63,9 @@
   /* ===== Header ===== */
   header{position:sticky;top:0;z-index:100;background:rgba(255,254,251,.97);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(94,15,11,.08);border-bottom:2px dashed var(--red-tint);}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0;}
-  .brand{display:flex;align-items:center;gap:10px;}
-  .brand img{height:52px;width:auto;}
-  .brand .word{font-family:'Pacifico',cursive;font-size:1.9rem;color:var(--orange);line-height:1;}
-  .brand small{display:block;font-family:'Nunito',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:1.6px;color:var(--ink-soft);text-transform:uppercase;margin-top:2px;}
+  .brand{display:flex;flex-direction:column;align-items:flex-start;gap:2px;}
+  .brand img{height:48px;width:auto;}
+  .brand small{display:block;font-family:'Nunito',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:1.9px;color:var(--ink-soft);text-transform:uppercase;}
   nav.links{display:flex;gap:26px;font-weight:800;font-size:.95rem;}
   nav.links a{position:relative;padding:6px 0;color:var(--ink);}
   nav.links a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:3px;border-radius:3px;background:var(--red);transition:width .25s;}
@@ -196,7 +195,7 @@
   footer{background:var(--red-darker);color:#F1D7D3;padding:64px 0 0;}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;}
   .foot-brand img{height:64px;background:#fff;border-radius:14px;padding:6px;}
-  .foot-brand .word{font-family:'Pacifico',cursive;font-size:1.7rem;color:#fff;display:block;margin:12px 0 4px;}
+  .foot-brand .word{font-family:'Mr Dafoe',cursive;font-size:2rem;color:#fff;display:block;margin:12px 0 4px;}
   .foot-brand p{font-size:.92rem;}
   footer h4{color:#fff;font-size:1.05rem;margin-bottom:16px;letter-spacing:.5px;}
   footer ul{list-style:none;display:grid;gap:10px;font-size:.95rem;}
@@ -253,11 +252,8 @@
 <header>
   <div class="container nav">
     <a class="brand" href="#top">
-      <img src="assets/foxxy-logo.png" alt="Foxxy fox logo" />
-      <span>
-        <span class="word">Foxxy</span>
-        <small>FoxxyCrunch.com</small>
-      </span>
+      <img src="assets/foxxy-lockup.png" alt="Foxxy — fox and leaf logo" />
+      <small>FoxxyCrunch.com</small>
     </a>
     <nav class="links" id="navLinks">
       <a href="#shop">Shop Makhana</a>
@@ -551,9 +547,9 @@ function pouchSVG(p, idx){
       <text x="34" y="26" font-family="Nunito, sans-serif" font-size="5.2" fill="#8a8276">FoxxyCrunch.com</text>
       <rect x="153" y="19" width="11" height="11" fill="#fff" stroke="#9aa08e" stroke-width=".9"/>
       <circle cx="158.5" cy="24.5" r="3" fill="#2E7D32"/>
-      <image href="assets/foxxy-logo.png" x="85" y="18" width="30" height="38" preserveAspectRatio="xMidYMid meet"/>
-      <text x="100" y="74" text-anchor="middle" font-family="Pacifico, cursive" font-size="17" fill="#E8662C">Foxxy</text>
-      <text x="100" y="89" text-anchor="middle" font-family="'Dancing Script', cursive" font-weight="700" font-size="9.5" fill="#4d473f">Smart Snacking. Foxxy Snacking</text>
+      <image href="assets/foxxy-logo.png" x="86" y="17" width="28" height="34" preserveAspectRatio="xMidYMid meet"/>
+      <image href="assets/foxxy-wordmark.png" x="67" y="50" width="66" height="34" preserveAspectRatio="xMidYMid meet"/>
+      <text x="100" y="93" text-anchor="middle" font-family="'Dancing Script', cursive" font-weight="700" font-size="9.5" fill="#4d473f">Smart Snacking. Foxxy Snacking</text>
       <path d="M24 142 C45 120 70 108 96 113 C124 119 146 110 162 101 C168 98 173 97 176 98 L176 176 C160 186 138 192 116 189 C90 186 60 194 38 201 C32 203 27 202 24 200 Z" fill="url(#${g})"/>
       <circle cx="38" cy="126" r="2.4" fill="${p.color1}"/>
       <circle cx="48" cy="117" r="1.9" fill="${p.color1}"/>

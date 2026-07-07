@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Foxxy Makhana — B2B Trade & Wholesale | Roasted Foxnuts for Retail, Distribution & Export</title>
-<meta name="description" content="Foxxy is a retail-ready roasted makhana (foxnut) brand for modern trade, distributors, HoReCa and exports. 9 desi flavours, multiple pack formats, dependable supply. Partner with us — FoxxyCrunch.com" />
+<meta name="description" content="Foxxy is a retail-ready roasted makhana (foxnut) brand for modern trade, distributors, HoReCa and exports. Four bold flavours plus premium raw makhana across five pack formats. Partner with us — FoxxyCrunch.com" />
 <meta property="og:title" content="Foxxy Makhana — B2B Trade & Wholesale" />
 <meta property="og:description" content="A retail-ready, better-for-you snack for modern trade, distribution, HoReCa & exports. Stock India's smartest snack." />
 <meta property="og:image" content="assets/pack-peri.jpg" />
@@ -170,23 +170,13 @@
   .ticks li{display:flex;gap:12px;align-items:flex-start;font-weight:700;}
   .ticks .tick{flex:0 0 26px;height:26px;border-radius:50%;background:var(--leaf);color:#fff;display:grid;place-items:center;font-size:.8rem;margin-top:2px;}
 
-  /* ===== Quality & compliance ===== */
+  /* ===== Quality ===== */
   .quality{background:var(--cream);}
-  .quality-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
-  .qa-list{list-style:none;display:grid;gap:16px;}
-  .qa-list li{display:flex;gap:14px;align-items:flex-start;}
-  .qa-list .qa-ico{flex:0 0 40px;height:40px;border-radius:12px;background:#fff;border:2px dashed var(--red-tint);display:grid;place-items:center;font-size:1.2rem;}
+  .qa-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .qa-list li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:2px dashed var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);}
+  .qa-list .qa-ico{flex:0 0 40px;height:40px;border-radius:12px;background:var(--cream);border:2px dashed var(--red-tint);display:grid;place-items:center;font-size:1.2rem;}
   .qa-list h4{font-size:1.05rem;}
   .qa-list p{font-size:.9rem;color:var(--ink-soft);}
-  .cert-card{background:#fff;border:2px dashed var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);}
-  .cert-card h3{font-size:1.25rem;margin-bottom:6px;}
-  .cert-card>p{font-size:.9rem;color:var(--ink-soft);margin-bottom:22px;}
-  .cert-badges{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-  .cert{display:flex;gap:12px;align-items:center;padding:14px;border-radius:12px;background:var(--cream);border:1.5px dashed var(--line);}
-  .cert .cb{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:.66rem;color:#fff;text-align:center;line-height:1;flex:0 0 42px;}
-  .cert b{font-size:.92rem;display:block;}
-  .cert span{font-size:.74rem;color:var(--ink-soft);font-weight:700;}
-  .pending{color:var(--orange);}
 
   /* ===== Trade specs / SKU matrix ===== */
   .specs{background:var(--wm), var(--paper);}
@@ -197,8 +187,9 @@
   .fmt-card .wt{font-weight:800;color:var(--ink);font-size:1.1rem;}
   .fmt-card p{font-size:.82rem;color:var(--ink-soft);margin-top:4px;}
   .table-wrap{overflow-x:auto;border:2px dashed var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow);}
-  table.spec{border-collapse:collapse;width:100%;min-width:720px;font-size:.9rem;}
+  table.spec{border-collapse:collapse;width:100%;min-width:680px;font-size:.9rem;}
   table.spec th,table.spec td{padding:13px 16px;text-align:left;border-bottom:1px dashed var(--line);white-space:nowrap;}
+  table.spec td:nth-child(4){white-space:normal;min-width:240px;}
   table.spec thead th{background:var(--red-deep);color:#fff;font-family:'Baloo 2',cursive;font-weight:700;letter-spacing:.4px;border-bottom:none;}
   table.spec thead th:first-child{border-top-left-radius:0;}
   table.spec tbody tr:nth-child(even){background:var(--cream);}
@@ -238,13 +229,7 @@
   footer h4{color:#fff;font-size:1.05rem;margin-bottom:16px;letter-spacing:.5px;}
   footer ul{list-style:none;display:grid;gap:10px;font-size:.93rem;}
   footer ul a:hover{color:var(--gold);}
-  .socials{display:flex;gap:12px;margin-top:18px;}
-  .socials a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;transition:.2s;}
-  .socials a:hover{background:var(--orange);}
-  .socials svg{width:17px;height:17px;fill:#fff;}
-  .foot-contact li{display:flex;gap:10px;align-items:flex-start;}
-  .legal-line{font-size:.82rem;color:#C9968F;line-height:1.7;}
-  .legal-line b{color:#F1D7D3;}
+  .foot-contact li{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;}
   .copyright{border-top:2px dashed rgba(255,255,255,.18);padding:20px 0;text-align:center;font-size:.85rem;color:#D8A8A2;}
   .copyright .script{color:var(--gold);}
 
@@ -259,7 +244,7 @@
 
   /* ===== Responsive ===== */
   @media(max-width:920px){
-    .hero-grid,.story-grid,.quality-grid,.enquiry-grid{grid-template-columns:1fr;}
+    .hero-grid,.story-grid,.qa-list,.enquiry-grid{grid-template-columns:1fr;}
     .hero-visual{order:-1;}
     .foot-grid{grid-template-columns:1fr 1fr;}
     nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:18px 6%;gap:16px;box-shadow:0 18px 30px rgba(0,0,0,.12);}
@@ -318,7 +303,7 @@
       <span class="hero-kicker">B2B · Wholesale · Private Trade</span>
       <svg class="dotted-arc" style="margin:0 0 12px" width="190" height="12" viewBox="0 0 190 12"><path d="M2 9 Q95 -4 188 9" fill="none" stroke="#A8201A" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 7"/></svg>
       <h1>Stock India's Smartest Snack.<span class="script">Partner with Foxxy.</span></h1>
-      <p class="lead">Foxxy roasted makhana is a retail-ready, better-for-you snack built for modern trade, distribution, HoReCa and exports. Nine desi flavours, multiple pack formats and dependable supply — ready for your shelves.</p>
+      <p class="lead">Foxxy roasted makhana is a retail-ready, better-for-you snack built for modern trade, distribution, HoReCa and exports. Four bold flavours plus premium raw makhana, five pack formats and dependable supply — ready for your shelves.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#contact">Become a Stockist</a>
         <a class="btn btn-outline" href="#specs">View Trade Specs</a>
@@ -380,8 +365,8 @@
       </div>
     </div>
     <div class="stats">
-      <div class="stat reveal"><div class="ico">🌶️</div><h3>9 Flavours</h3><p>Spicy, tangy, classic &amp; sweet — a full shelf range, not a single SKU</p></div>
-      <div class="stat reveal"><div class="ico">📦</div><h3>5 Formats</h3><p>Impulse sachet to family jar — covers every price point &amp; aisle</p></div>
+      <div class="stat reveal"><div class="ico">🌶️</div><h3>4 Flavours</h3><p>Two spicy, two classic — plus premium raw makhana</p></div>
+      <div class="stat reveal"><div class="ico">📦</div><h3>5 Formats</h3><p>20 g sachet to 1 kg bulk — covers every price point &amp; aisle</p></div>
       <div class="stat reveal"><div class="ico">🗓️</div><h3>6–9 mo*</h3><p>Long shelf life — low wastage and easy stock rotation</p></div>
       <div class="stat reveal"><div class="ico">📈</div><h3>Repeat</h3><p>Healthy + tasty drives trial, then high repeat-purchase velocity</p></div>
     </div>
@@ -409,14 +394,13 @@
       <span class="kicker">Our trade range</span>
       <h2>The Foxxy Makhana Range</h2>
       <svg class="dotted-arc" width="230" height="14" viewBox="0 0 230 14"><path d="M2 11 Q115 -5 228 11" fill="none" stroke="#A8201A" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 7"/></svg>
-      <p>Nine desi-flavoured roasted foxnuts, each available across multiple retail and bulk pack formats. Browse the range — full SKU matrix and price list shared on enquiry.</p>
+      <p>Four flavoured roasted foxnuts — two spicy, two classic — plus premium raw makhana, available across retail and bulk pack formats. Full price list shared on enquiry.</p>
     </div>
     <div class="filters reveal" id="filters">
       <button class="filter-pill active" data-filter="all">All</button>
       <button class="filter-pill" data-filter="spicy">Spicy 🌶️</button>
-      <button class="filter-pill" data-filter="tangy">Tangy 🍋</button>
       <button class="filter-pill" data-filter="classic">Classic 🤍</button>
-      <button class="filter-pill" data-filter="sweet">Sweet 🍯</button>
+      <button class="filter-pill" data-filter="raw">Raw 🌾</button>
     </div>
     <div class="grid" id="productGrid"></div>
   </div>
@@ -471,24 +455,12 @@
       <h2>Made Clean. Documented for Trade.</h2>
       <svg class="dotted-arc" width="230" height="14" viewBox="0 0 230 14"><path d="M2 11 Q115 -5 228 11" fill="none" stroke="#A8201A" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 7"/></svg>
     </div>
-    <div class="quality-grid">
-      <ul class="qa-list reveal">
-        <li><div class="qa-ico">🔥</div><div><h4>Roasted, never fried</h4><p>Slow-roasting keeps oil low and crunch high — a genuine better-for-you claim you can merchandise.</p></div></li>
-        <li><div class="qa-ico">🌿</div><div><h4>Clean label, 100% vegetarian</h4><p>No palm oil, no maida, no artificial colours. Carries the FSSAI green veg mark on every pack.</p></div></li>
-        <li><div class="qa-ico">🧪</div><div><h4>Batch consistency</h4><p>Standardised seasoning and quality checks for consistent taste, weight and texture across batches.</p></div></li>
-        <li><div class="qa-ico">📄</div><div><h4>Trade documentation</h4><p>Specs, nutritional info, shelf-life data and required licences shared with buyers during onboarding.</p></div></li>
-      </ul>
-      <div class="cert-card reveal">
-        <h3>Certifications &amp; Licences</h3>
-        <p>Compliance details are being finalised and will be shared on the pack and in trade documents. Indicative set below — confirmed copies provided to buyers on request.</p>
-        <div class="cert-badges">
-          <div class="cert"><div class="cb" style="background:var(--leaf)">FSSAI</div><div><b>FSSAI Licensed</b><span class="pending">Lic. No. — to be added</span></div></div>
-          <div class="cert"><div class="cb" style="background:var(--leaf)">VEG</div><div><b>100% Vegetarian</b><span>Green veg mark</span></div></div>
-          <div class="cert"><div class="cb" style="background:var(--water)">ISO·HACCP</div><div><b>Food Safety</b><span class="pending">Planned / in progress</span></div></div>
-          <div class="cert"><div class="cb" style="background:var(--orange)">EXPORT</div><div><b>Export Docs</b><span class="pending">Available on request</span></div></div>
-        </div>
-      </div>
-    </div>
+    <ul class="qa-list reveal">
+      <li><div class="qa-ico">🔥</div><div><h4>Roasted, never fried</h4><p>Slow-roasting keeps oil low and crunch high — a genuine better-for-you claim you can merchandise.</p></div></li>
+      <li><div class="qa-ico">🌿</div><div><h4>Clean label, 100% vegetarian</h4><p>No palm oil, no maida, no artificial colours. Carries the green veg mark on every pack.</p></div></li>
+      <li><div class="qa-ico">🧪</div><div><h4>Batch consistency</h4><p>Standardised seasoning and quality checks for consistent taste, weight and texture across batches.</p></div></li>
+      <li><div class="qa-ico">📄</div><div><h4>Trade documentation</h4><p>Specs, nutritional info and shelf-life data shared with buyers during onboarding.</p></div></li>
+    </ul>
   </div>
 </section>
 
@@ -502,28 +474,27 @@
       <p>Each flavour is available across these formats. Figures below are indicative — full SKU matrix, MRP, case configuration and barcodes are confirmed per order.</p>
     </div>
     <div class="formats">
-      <div class="fmt-card reveal"><div class="fi">🛍️</div><b>Impulse Sachet</b><span class="wt">20 g</span><p>Checkout &amp; trial · highest velocity</p></div>
-      <div class="fmt-card reveal"><div class="fi">🧃</div><b>Stand-up Pouch</b><span class="wt">75 g</span><p>Core retail facing SKU</p></div>
-      <div class="fmt-card reveal"><div class="fi">🛒</div><b>Value Pouch</b><span class="wt">150 g</span><p>Family / pantry pack</p></div>
-      <div class="fmt-card reveal"><div class="fi">🫙</div><b>PET Jar</b><span class="wt">200 g</span><p>Premium &amp; gifting · modern trade</p></div>
-      <div class="fmt-card reveal"><div class="fi">📦</div><b>Bulk Pack</b><span class="wt">1 kg</span><p>HoReCa / institutional</p></div>
+      <div class="fmt-card reveal"><div class="fi">🛍️</div><b>Flavoured Sachet</b><span class="wt">20 g</span><p>Impulse &amp; trial · checkout counters</p></div>
+      <div class="fmt-card reveal"><div class="fi">🧃</div><b>Flavoured Poly Pack</b><span class="wt">50 g</span><p>Core retail SKU · general trade</p></div>
+      <div class="fmt-card reveal"><div class="fi">🫙</div><b>Flavoured PET Jar</b><span class="wt">70 g</span><p>Premium shelf &amp; modern trade</p></div>
+      <div class="fmt-card reveal"><div class="fi">🌾</div><b>Raw Makhana</b><span class="wt">250 g</span><p>Premium 5-suta raw · retail pack</p></div>
+      <div class="fmt-card reveal"><div class="fi">📦</div><b>Bulk Pack</b><span class="wt">1 kg</span><p>Raw · HoReCa / institutional</p></div>
     </div>
     <div class="table-wrap reveal">
       <table class="spec">
         <thead>
-          <tr><th>SKU Code</th><th>Flavour</th><th>Net Wt</th><th>Pack Format</th><th>Units / Case</th><th>Shelf Life</th><th>MRP (₹)</th><th>HSN</th><th>EAN / Barcode</th></tr>
+          <tr><th>Product</th><th>Net Wt</th><th>Pack Format</th><th>Flavours</th><th>Shelf Life</th><th>MRP (₹)</th></tr>
         </thead>
         <tbody>
-          <tr><td><b>FX-PP-20</b></td><td>Peri-Peri</td><td>20 g</td><td>Impulse Sachet</td><td>48</td><td>6–9 mo</td><td class="req">On request</td><td class="req">—</td><td class="req">On request</td></tr>
-          <tr><td><b>FX-PP-75</b></td><td>Peri-Peri</td><td>75 g</td><td>Stand-up Pouch</td><td>24</td><td>6–9 mo</td><td class="req">On request</td><td class="req">—</td><td class="req">On request</td></tr>
-          <tr><td><b>FX-PP-200</b></td><td>Peri-Peri</td><td>200 g</td><td>PET Jar</td><td>12</td><td>6–9 mo</td><td class="req">On request</td><td class="req">—</td><td class="req">On request</td></tr>
-          <tr><td><b>FX-MM-75</b></td><td>Mint Masti</td><td>75 g</td><td>Stand-up Pouch</td><td>24</td><td>6–9 mo</td><td class="req">On request</td><td class="req">—</td><td class="req">On request</td></tr>
-          <tr><td><b>FX-DC-75</b></td><td>Desi Chaat</td><td>75 g</td><td>Stand-up Pouch</td><td>24</td><td>6–9 mo</td><td class="req">On request</td><td class="req">—</td><td class="req">On request</td></tr>
-          <tr><td><b>FX-RW-1K</b></td><td>Raw Premium</td><td>1 kg</td><td>Bulk Pack</td><td>10</td><td>9–12 mo</td><td class="req">On request</td><td class="req">—</td><td class="req">On request</td></tr>
+          <tr><td><b>Flavoured Makhana</b></td><td>20 g</td><td>Sachet</td><td>Peri Peri · Chilly Lemon · Salt &amp; Pepper · Cream &amp; Onion</td><td>6–9 mo</td><td class="req">On request</td></tr>
+          <tr><td><b>Flavoured Makhana</b></td><td>50 g</td><td>Poly Pack</td><td>Peri Peri · Chilly Lemon · Salt &amp; Pepper · Cream &amp; Onion</td><td>6–9 mo</td><td class="req">On request</td></tr>
+          <tr><td><b>Flavoured Makhana</b></td><td>70 g</td><td>PET Jar</td><td>Peri Peri · Chilly Lemon · Salt &amp; Pepper · Cream &amp; Onion</td><td>6–9 mo</td><td class="req">On request</td></tr>
+          <tr><td><b>Raw Makhana — Premium</b></td><td>250 g</td><td>Retail Pack</td><td>Plain · 5-suta grade</td><td>9–12 mo</td><td class="req">On request</td></tr>
+          <tr><td><b>Raw Makhana — Bulk</b></td><td>1 kg</td><td>Bulk Pack</td><td>Plain · 5-suta grade</td><td>9–12 mo</td><td class="req">On request</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="spec-note reveal">Representative SKUs shown. <b>Full matrix — all 9 flavours × formats, MRP, case packs, HSN codes, EAN/barcodes, carton dimensions &amp; weights — is shared with serious trade enquiries.</b> MOQ, lead times and commercial terms confirmed on discussion.</p>
+    <p class="spec-note reveal">Shelf life indicative. <b>Full price list, case configurations, EAN/barcodes and carton details are shared with trade enquiries.</b> MOQ, lead times and commercial terms confirmed on discussion.</p>
   </div>
 </section>
 
@@ -535,14 +506,19 @@
       <h2>Let's Put Foxxy <span class="script">on Your Shelves</span></h2>
       <p>Retail chain, distributor, HoReCa or exporter — tell us a little about your business and we'll send the trade catalogue, price list and sample plan.</p>
       <ul class="e-contact">
-        <li><span class="ec">👤</span> <div><b>Nikesh Kumar Sinha</b><br/><span style="font-weight:600;color:#F6D9D5">Designated Partner</span></div></li>
-        <li><span class="ec">📧</span> <a href="mailto:Nikesh.Sinha@FoxxyCrunch.com">Nikesh.Sinha@FoxxyCrunch.com</a></li>
-        <li><span class="ec">📞</span> <a href="tel:+919769556099">+91 97695 56099</a></li>
+        <li><span class="ec">👤</span> <div><b>Nikesh Kumar Sinha</b> · <span style="font-weight:600;color:#F6D9D5">Designated Partner</span><br/><a href="mailto:Nikesh.Sinha@FoxxyCrunch.com">Nikesh.Sinha@FoxxyCrunch.com</a><br/><a href="tel:+919769556099">+91 97695 56099</a></div></li>
+        <li><span class="ec">👤</span> <div><b>Sonia Kiran</b><br/><a href="mailto:Sonia.Kiran@FoxxyCrunch.com">Sonia.Kiran@FoxxyCrunch.com</a><br/><a href="tel:+919769016140">+91 97690 16140</a></div></li>
         <li><span class="ec">🌐</span> <a href="https://FoxxyCrunch.com">FoxxyCrunch.com</a></li>
       </ul>
     </div>
     <div class="form-card reveal">
-      <form id="tradeForm">
+      <form id="tradeForm" action="https://formsubmit.co/Nikesh.Sinha@FoxxyCrunch.com" method="POST">
+        <input type="hidden" name="_subject" value="New Foxxy Trade Enquiry — FoxxyCrunch.com" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_cc" value="Sonia.Kiran@FoxxyCrunch.com" />
+        <input type="hidden" name="_next" id="nextField" value="https://harshk264.github.io/foxxycrunch/?sent=1" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="fg">
           <div class="field"><label for="company">Company / Firm</label><input id="company" name="company" type="text" placeholder="Your business name" required /></div>
           <div class="field"><label for="person">Contact Person</label><input id="person" name="person" type="text" placeholder="Full name" required /></div>
@@ -563,6 +539,7 @@
         <div class="field full"><label for="message">Requirement</label><textarea id="message" name="message" placeholder="Channels, store count, target SKUs / formats, volumes, timeline…"></textarea></div>
         <button class="btn btn-primary" type="submit">Send Trade Enquiry</button>
         <div class="form-msg" id="formMsg"></div>
+        <p style="margin-top:12px;text-align:center;font-size:.85rem;color:var(--ink-soft)">Prefer email? Write directly to <a href="mailto:Nikesh.Sinha@FoxxyCrunch.com" style="color:var(--red-deep);font-weight:800">Nikesh</a> or <a href="mailto:Sonia.Kiran@FoxxyCrunch.com" style="color:var(--red-deep);font-weight:800">Sonia</a>.</p>
       </form>
     </div>
   </div>
@@ -589,11 +566,6 @@
         <img src="assets/foxxy-logo.png" alt="Foxxy logo" />
         <span class="word">Foxxy</span>
         <p>Smart Snacking. Foxxy Snacking.<br/>Crispy roasted makhana for retail, distribution &amp; export trade.</p>
-        <div class="socials">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.2 2.4 4.2 5.4v6.3zM5.3 7.4a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1zM7.1 20.4H3.6V9h3.5v11.4z"/></svg></a>
-        </div>
       </div>
       <div>
         <h4>Trade</h4>
@@ -616,16 +588,12 @@
       <div>
         <h4>Get in Touch</h4>
         <ul class="foot-contact">
+          <li>👤 Nikesh Kumar Sinha · <a href="tel:+919769556099">+91 97695 56099</a></li>
           <li>📧 <a href="mailto:Nikesh.Sinha@FoxxyCrunch.com">Nikesh.Sinha@FoxxyCrunch.com</a></li>
-          <li>📞 <a href="tel:+919769556099">+91 97695 56099</a></li>
+          <li>👤 Sonia Kiran · <a href="tel:+919769016140">+91 97690 16140</a></li>
+          <li>📧 <a href="mailto:Sonia.Kiran@FoxxyCrunch.com">Sonia.Kiran@FoxxyCrunch.com</a></li>
           <li>🌐 <a href="https://FoxxyCrunch.com">FoxxyCrunch.com</a></li>
         </ul>
-        <p class="legal-line" style="margin-top:16px">
-          <b>Foxxy</b> is operated by a registered LLP.<br/>
-          Legal entity: <b>[LLP name — to be added]</b><br/>
-          GSTIN: [to be added] · FSSAI: [to be added]<br/>
-          Regd. office: [address — to be added]
-        </p>
       </div>
     </div>
     <div class="copyright">
@@ -639,15 +607,11 @@
 <script>
 /* ============ Product data (trade range — no consumer pricing/cart) ============ */
 const PRODUCTS = [
-  {name:"Peri-Peri Makhana", flavor:"Fiery African bird's-eye chilli — a high-velocity, masala-led seller.", cat:"spicy", color1:"#C0392B", color2:"#7C1410", badge:"popular", badgeText:"Top Seller"},
-  {name:"Mint Masti Makhana", flavor:"Cooling pudina with a cheeky masala twist. The signature green pack.", cat:"classic", color1:"#3FA75A", color2:"#1E6B33", badge:"bestseller", badgeText:"Bestseller"},
-  {name:"Himalayan Salt n Pepper", pack:"Salt n Pepper", flavor:"Pink salt &amp; cracked pepper — a clean, everyday classic.", cat:"classic", color1:"#5B7FA6", color2:"#2F4A68", badge:null, badgeText:null},
-  {name:"Cheddar Cheese Makhana", flavor:"Sharp cheddar dusting — a kid- and family-favourite flavour.", cat:"classic", color1:"#E8A91D", color2:"#A56A06", badge:"new", badgeText:"New"},
-  {name:"Desi Chaat Makhana", flavor:"Street-style chaat masala &amp; amchur tang — strong mass appeal.", cat:"tangy", color1:"#D24E78", color2:"#931F47", badge:null, badgeText:null},
-  {name:"Smoky BBQ Makhana", flavor:"Slow-smoked barbecue rub with a sweet-heat finish.", cat:"spicy", color1:"#7A5240", color2:"#43261A", badge:null, badgeText:null},
-  {name:"Tomato Achaari Makhana", flavor:"Tangy tomato meets aam-achaar attitude — a regional favourite.", cat:"tangy", color1:"#E2603F", color2:"#A03014", badge:null, badgeText:null},
-  {name:"Khatta Meetha Makhana", flavor:"Imli ka khatta, gud ka meetha — broad, nostalgic sweet-tangy appeal.", cat:"sweet", color1:"#8E6BBF", color2:"#5B3A8C", badge:null, badgeText:null},
-  {name:"Raw Makhana — Premium", pack:"Raw Premium", flavor:"Plain 5-suta grade lotus seeds — for retail, HoReCa &amp; bulk supply.", cat:"classic", color1:"#8FA04C", color2:"#5C6B26", badge:null, badgeText:null},
+  {name:"Peri Peri Makhana", pack:"Peri Peri", flavor:"Fiery peri-peri masala — the high-velocity seller of the range.", cat:"spicy", color1:"#C0392B", color2:"#7C1410", badge:"popular", badgeText:"Top Seller", formats:"20g · 50g poly · 70g PET"},
+  {name:"Chilly Lemon Makhana", flavor:"Zesty lemon tang with a green-chilli kick — bright and moreish.", cat:"spicy", color1:"#C9A417", color2:"#8A6C06", badge:"new", badgeText:"New", formats:"20g · 50g poly · 70g PET"},
+  {name:"Himalayan Salt &amp; Pepper", pack:"Salt & Pepper", flavor:"Pink salt &amp; cracked pepper — a clean, everyday classic.", cat:"classic", color1:"#5B7FA6", color2:"#2F4A68", badge:null, badgeText:null, formats:"20g · 50g poly · 70g PET"},
+  {name:"Cream &amp; Onion Makhana", pack:"Cream & Onion", flavor:"Creamy spring-onion flavour — a proven, family-favourite profile.", cat:"classic", color1:"#69A84F", color2:"#35702A", badge:null, badgeText:null, formats:"20g · 50g poly · 70g PET"},
+  {name:"Raw Makhana — Premium", pack:"Raw Premium", flavor:"Plain 5-suta grade lotus seeds — retail 250g &amp; 1kg bulk supply.", cat:"raw", color1:"#8FA04C", color2:"#5C6B26", badge:null, badgeText:null, formats:"250g · 1kg bulk"},
 ];
 
 /* ============ Pouch SVG — replicates the real Foxxy pack design language ============ */
@@ -728,7 +692,7 @@ PRODUCTS.forEach((p, i) => {
       <div class="card-flavor">${p.flavor}</div>
       <div class="card-spec">
         <span class="veg"><b></b>100% Veg</span>
-        <span class="fmt">· Formats: 20g · 75g · 200g · 1kg</span>
+        <span class="fmt">· Formats: ${p.formats}</span>
       </div>
     </div>`;
   grid.appendChild(card);
@@ -757,30 +721,18 @@ document.getElementById("filters").addEventListener("click", e => {
   });
 });
 
-/* ============ Trade enquiry → opens email pre-filled to Foxxy ============ */
-document.getElementById("tradeForm").addEventListener("submit", e => {
-  e.preventDefault();
-  const v = id => (document.getElementById(id).value || "").trim();
-  const company = v("company"), person = v("person"), email = v("email"),
-        phone = v("phone"), btype = v("btype"), city = v("city"), message = v("message");
-  const subject = `Trade Enquiry — ${company} (${btype || "B2B"})`;
-  const body =
-`New Foxxy trade enquiry
-------------------------------------
-Company / Firm : ${company}
-Contact Person : ${person}
-Email          : ${email}
-Phone          : ${phone}
-Business Type  : ${btype}
-City / Region  : ${city}
-
-Requirement:
-${message}
-`;
-  const mailto = `mailto:Nikesh.Sinha@FoxxyCrunch.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  document.getElementById("formMsg").textContent = "🦊 Opening your email app with the enquiry pre-filled. If it doesn't open, email us at Nikesh.Sinha@FoxxyCrunch.com";
-  showToast("Thanks " + (person || "") + "! Opening your email to send the enquiry…");
-  window.location.href = mailto;
+/* ============ Trade enquiry — posts to FormSubmit, which emails Foxxy directly ============ */
+/* Return URL follows whatever domain the site is served on (github.io now, FoxxyCrunch.com later) */
+document.getElementById("nextField").value = location.origin + location.pathname + "?sent=1";
+/* After FormSubmit redirects back with ?sent=1, confirm success to the visitor */
+if(new URLSearchParams(location.search).has("sent")){
+  const fm = document.getElementById("formMsg");
+  if(fm) fm.textContent = "✅ Enquiry sent! We'll get back to you within 1–2 business days.";
+  document.getElementById("contact").scrollIntoView();
+  showToast("Thanks! Your trade enquiry has been sent.");
+}
+document.getElementById("tradeForm").addEventListener("submit", () => {
+  document.getElementById("formMsg").textContent = "Sending your enquiry…";
 });
 
 /* ============ Mobile menu ============ */
